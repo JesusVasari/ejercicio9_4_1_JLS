@@ -12,7 +12,8 @@ fun main() {
                 cadena.add(cadena_string)
             } else {
                 if (cadena.isEmpty()) return 0
-                val s_pop = cadena.pop() if (s_pop == "{") {
+                val s_pop = cadena.remove()
+                if (s_pop == "{") {
                     if (cadena_string != "}") return 0
                 } else if (s_pop == "[") {
                     if (cadena_string != "]") return 0
