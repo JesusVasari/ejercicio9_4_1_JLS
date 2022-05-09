@@ -22,16 +22,19 @@ fun main() {
                  * retorna 0 que es falso
                  */
                 if (cadena.isEmpty()) return 0
-                val cadena_pop = cadena.removeLast()
-                if (cadena_pop == "{") {
+                val cadenaFinalLista = cadena.removeLast()
+                if (cadenaFinalLista == "{") {
                     if (cadena_string != "}") return 0
-                } else if (cadena_pop == "[") {
+                } else if (cadenaFinalLista == "[") {
                     if (cadena_string != "]") return 0
-                } else if (cadena_pop == "(") {
+                } else if (cadenaFinalLista == "(") {
                     if (cadena_string != ")") return 0
                 }
             }
         }
+        /**
+         * si encuentra que la lista está vacía devuelve un 0
+         */
         if(!cadena.isEmpty()) return 0
 
         return 1
