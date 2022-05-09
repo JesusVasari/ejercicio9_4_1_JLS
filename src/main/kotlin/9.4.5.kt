@@ -7,10 +7,10 @@ fun main(){
     fun solucion(array: IntArray):Int{
 
         /**
-         * se comprueba si el array es 0 o nullo
+         * se comprueba el tamaño de la array
          */
 
-        if(array==0){
+        if(array.size==0){
             return 0
         }
         /**
