@@ -16,6 +16,11 @@ fun main() {
             if (cadena_string == "{" || cadena_string == "[" || cadena_string == "(") {
                 cadena.add(cadena_string)  //añade  [, (  { a la lista de cadena
             } else {
+                /**
+                 * se va comprobando las últimas posiciones de la lista si tiene los carácteres de
+                 * llave, paréntesis o corchete y se va sacando de la lista, si no se saca pues
+                 * retorna 0 que es falso
+                 */
                 if (cadena.isEmpty()) return 0
                 val cadena_pop = cadena.removeLast()
                 if (cadena_pop == "{") {
