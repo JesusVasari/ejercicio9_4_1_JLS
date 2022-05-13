@@ -2,6 +2,7 @@ fun main() {
 
 
     val num: Int = 19
+
     val binario = Integer.toBinaryString(num)
         .replace(Regex("0+$"), "")
 
@@ -11,5 +12,11 @@ fun main() {
         .filter { it > 0 }
 
    println(longitudCeros.maxOrNull())
+
+
+
+
+
+
 }
 

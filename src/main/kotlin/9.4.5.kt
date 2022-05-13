@@ -4,6 +4,8 @@
 
 fun main(){
 
+    var array = intArrayOf()
+
     fun solucion(array: IntArray):Int{
 
         /**
